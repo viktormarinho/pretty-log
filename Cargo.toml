@@ -1,9 +1,9 @@
 [package]
 name = "pretty-log"
-version = "1.0.0"
+version = "1.1.0"
 edition = "2021"
 license = "MIT"
-description = "A simple logger for Rust. Contains traits for Option and Result."
+description = "A simple logger for Rust. Contains traits for logging on Option and Result failures."
 authors = ["viktormarinho"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
