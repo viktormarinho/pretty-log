@@ -12,7 +12,7 @@ impl<T, E> PrettyError<T> for Result<T, E> {
         match self {
             Ok(value) => value,
             Err(_) => {
-                println!("{}{}", message_prefix(), message.red().bold());
+                println!("{}{}", message_prefix().red().bold(), message.red().bold());
                 std::process::exit(1);
             },
         }
@@ -24,7 +24,7 @@ impl<T> PrettyError<T> for Option<T> {
         match self {
             Some(value) => value,
             None => {
-                println!("{}{}", message_prefix(), message.red().bold());
+                println!("{}{}", message_prefix().red().bold(), message.red().bold());
                 std::process::exit(1);
             },
         }

@@ -44,18 +44,18 @@ pub fn init(title: &str) -> () {
 }
 
 pub fn info(message: &str) {
-    println!("{}{}", message_prefix(), message.blue());
+    println!("{}{}", message_prefix().blue(), message.blue());
 }
 
 pub fn warn(message: &str) {
-    println!("{}{}", message_prefix(), message.yellow());
+    println!("{}{}", message_prefix().yellow(), message.yellow());
 }
 
 pub fn error(message: &str) {
-    println!("{}{}", message_prefix(), message.red().bold());
+    println!("{}{}", message_prefix().red().bold(), message.red().bold());
 }
 
 pub fn error_exit(message: &str) -> ! {
-    println!("{}{}", message_prefix(), message.red().bold());
+    println!("{}{}", message_prefix().red().bold(), message.red().bold());
     std::process::exit(1);
 }
